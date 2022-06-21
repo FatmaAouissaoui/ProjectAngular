@@ -1,0 +1,42 @@
+[
+    {
+        "Techno": "Java JRE",
+        "Nombre_de_replicas": "1 Env Hors Prod \r2 Min en Prod",
+        "CPU_Request": 0.01,
+        "CPU_Limit": 1,
+        "Ram_Request": 512,
+        "Ram_Limit": 512
+    },
+    {
+        "Techno": "Java JDK",
+        "Nombre_de_replicas": "1 Env Hors Prod \r2 Min en Prod",
+        "CPU_Request": 0.01,
+        "CPU_Limit": 1,
+        "Ram_Request": 512,
+        "Ram_Limit": 512
+    },
+    {
+        "Techno": "NodeJs",
+        "Nombre_de_replicas": "1 Max Env Hors Prod \r2 Min Env Prod",
+        "CPU_Request": 0.01,
+        "CPU_Limit": 1,
+        "Ram_Request": 256,
+        "Ram_Limit": 256
+    },
+    {
+        "Techno": "Nginx",
+        "Nombre_de_replicas": "1 Max Env Hors Prod \r2 Min Env Prod",
+        "CPU_Request": 0.01,
+        "CPU_Limit": 1,
+        "Ram_Request": 256,
+        "Ram_Limit": 256
+    },
+    {
+        "Techno": "Redis",
+        "Nombre_de_replicas": "1 Max Env Hors Prod \r2 Min Env Prod",
+        "CPU_Request": 0.01,
+        "CPU_Limit": 1,
+        "Ram_Request": 512,
+        "Ram_Limit": 512
+    }
+]

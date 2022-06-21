@@ -1,0 +1,44 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Techno Column -->
+  <ng-container matColumnDef="Techno">
+    <th mat-header-cell *matHeaderCellDef> Techno </th>
+    <td mat-cell *matCellDef="let element"> {{element.Techno}} </td>
+  </ng-container>
+
+  <!-- Nombre de replicas Column -->
+  <ng-container matColumnDef="Nombre de replicas">
+    <th mat-header-cell *matHeaderCellDef> Nombre_de_replicas </th>
+    <td mat-cell *matCellDef="let element"> {{element.Nombre_de_replicas}} </td>
+  </ng-container>
+
+  <!-- CPU Request Column -->
+  <ng-container matColumnDef="CPU Request">
+    <th mat-header-cell *matHeaderCellDef> CPU_Request </th>
+    <td mat-cell *matCellDef="let element"> {{element.CPU_Request}} </td>
+  </ng-container>
+
+  <!-- CPU Limit Column -->
+  <ng-container matColumnDef="CPU Limit">
+    <th mat-header-cell *matHeaderCellDef> CPU_Limit </th>
+    <td mat-cell *matCellDef="let element"> {{element.CPU_Limit}} </td>
+  </ng-container>
+
+  <!-- Ram Request Column -->
+  <ng-container matColumnDef="Ram Request">
+    <th mat-header-cell *matHeaderCellDef> Ram_Request </th>
+    <td mat-cell *matCellDef="let element"> {{element.Ram_Request}} </td>
+  </ng-container>
+
+  <!-- Ram Limit Column -->
+  <ng-container matColumnDef="Ram Limit">
+    <th mat-header-cell *matHeaderCellDef> Ram_Limit </th>
+    <td mat-cell *matCellDef="let element"> {{element.Ram_Limit}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
